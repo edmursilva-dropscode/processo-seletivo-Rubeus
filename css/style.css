@@ -1,0 +1,1758 @@
+/* configuração geral do projeto CSS */
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+} 
+  
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+  
+body { 
+	overflow-x: hidden;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    background-color: rgb(245, 245, 245);
+}
+  
+a {
+    text-decoration: none;
+    color: #0da6a6;
+}
+  
+a:hover {
+    color: #0da6a6a9;
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+/* posiciona logo espera */
+.overlay-loading{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: rgba(0,0,0,0.3);
+}
+
+.overlay-loading img{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* box de alerta */
+.box-alert{                 
+	width: 100%;
+	padding:8px 0;
+	text-align: center;
+}
+
+.sucesso{
+	background: #299797;
+	color: white;
+}
+
+.erro{
+	background: #F75353;
+	color: white;
+}
+
+.sucesso-erro-box-login-o{
+	
+	display: none;
+	width: 100%;
+	padding:8px 0;
+	text-align: center;	
+	/* */
+	position: relative;
+	left: 0;
+	top: -18px;
+}
+
+.sucesso-erro-box-login-e{
+	
+	display: none;
+	width: 100%;
+	padding:8px 0;
+	text-align: center;	
+	/* */
+	position: relative;
+	left: 0;
+	top: -18px;
+}
+
+.sucesso-erro-box-login-s{
+	
+	display: none;
+	width: 100%;
+	padding:8px 0;
+	text-align: center;	
+	/* */
+	position: relative;
+	left: 0;
+	top: -18px;
+}
+
+.sucesso-erro-box-login-j{
+	
+	display: none;
+	width: 100%;
+	padding:8px 0;
+	text-align: center;	
+	/* */
+	position: relative;
+	left: 0;
+	top: -18px;
+}
+
+/* menu selecionado */
+.menu-active{               
+	background: #61767e;
+}
+
+.menu-active::before{
+	content: '> ';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* login.php */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* codigo do projeto(parte01) */
+/* element, class */
+#header {
+    position: absolute;
+    width: 100%;
+    height: 67px;
+    background: white;
+    z-index: 997;
+}
+
+#header .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#header .logo a {
+    color: #556270;
+}
+
+#header .header-menu{
+	position: relative;
+	padding: 16px 20% 0 20%;
+}
+
+#header .header-menu nav.navbar{
+    float: right;
+}
+
+#header .header-menu nav.navbar ul{
+    list-style-type: none;
+    margin-top: -35px;
+}
+
+#header .header-menu nav.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 20px;
+	/* */
+    min-width: 155px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    	
+}
+
+#header .navbar .signin, .navbar .signin:focus {
+    background: #0da6a6;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header .navbar .signin:hover, .navbar .signin:focus:hover {
+    color: #fff;
+    background: #0da6a6a9;
+	cursor: pointer;
+}
+  
+#header .navbar .signin, .navbar .signin:focus {
+    background: #0da6a6;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header .navbar .signup, .navbar .signup:focus {
+    background: #0da6a6;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header .navbar .signup:hover, .navbar .signup:focus:hover {
+    color: #fff;
+    background: #0da6a6a9;
+	cursor: pointer;
+}
+  
+#header .navbar .signup, .navbar .signup:focus {
+    background: #0da6a6;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
+/* codigo do projeto(parte02) */ 
+/* element, class */
+#rubeus {
+    position: relative; 
+    padding: 90px 0 90px 0;  
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#rubeus .section-title{
+	color: #556270;
+}
+
+#rubeus #box-login{
+	display: none;
+	max-width: 600px;
+	width: 95%;
+	padding: 60px 2%;
+	background: white;
+	position: absolute;
+	border-radius: 4px 4px 4px 4px;
+	left: 50%;
+	top: 65%;
+	transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	z-index: 10;
+}
+
+#rubeus #box-inscreva-se{
+	display: none;
+	max-width: 600px;
+	width: 95%;
+	padding: 60px 2%;
+	background: white;
+	position: absolute;
+	border-radius: 4px 4px 4px 4px;
+	left: 50%;
+	top: 65%;
+	transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	z-index: 10;
+}
+
+#rubeus .logo31{
+    position: absolute;
+    float: none;
+    margin-top: -90px;
+    margin-left: 85%;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/logo1_t.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;   
+    background-position: center;     
+    z-index: 11;
+    /*background-color: rgb(211, 84, 84);*/
+}
+
+#rubeus .logo31:hover {
+    position: absolute;
+    float: none;
+    margin-top: -90px;
+    margin-left: 85%;
+    width: 40px;
+    height: 40px;       
+    z-index: 11;
+    cursor: pointer;
+    /*background-color: rgb(211, 84, 84);*/
+}
+ 
+#rubeus .logo32{
+    position: absolute;
+    float: none;
+    margin-top: -90px;
+    margin-left: 85%;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/logo1_t.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;   
+    background-position: center;     
+    z-index: 11;
+    /*background-color: rgb(211, 84, 84);*/
+}
+
+#rubeus .logo32:hover {
+    position: absolute;
+    float: none;
+    margin-top: -90px;
+    margin-left: 85%;
+    width: 40px;
+    height: 40px;       
+    z-index: 11;
+    cursor: pointer;
+    /*background-color: rgb(211, 84, 84);*/
+}
+
+#rubeus .php-login-form {
+    width: 100%;
+    background: #fff;
+}
+  
+#rubeus .php-login-form .form-group {
+    padding-bottom: 8px;
+}
+  
+#rubeus .php-login-form input, .rubeus .php-login-form textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+}
+  
+#rubeus .php-login-form input:focus, .rubeus .php-login-form textarea:focus {
+    border-color: #3cd8d8;
+}
+  
+#rubeus .php-login-form input {
+    height: 44px;
+}
+
+#rubeus .php-login-form form select{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+
+#rubeus .php-login-form form input[type="submit"] {
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    border: 0;
+    width: 155px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #3cd8d8;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);    
+}
+  
+#rubeus .php-login-form form input[type="submit"]:hover {
+    background: #299797;
+}
+  
+#rubeus .php-login-form form input[type="submit"]:focus {
+    outline: none;
+}
+
+#hero {
+	z-index: 1;
+}
+
+#hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#hero .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+    content: "";
+    background-color: rgba(30, 35, 40, 0.6);
+}
+
+#hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    left: 50px;
+    right: 50px;
+}
+
+#hero .container {
+    text-align: center;
+}
+
+#hero h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#hero p {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-prev {
+	z-index: 11;
+}
+
+#hero .carousel-control-next {
+	z-index: 11;
+}
+
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#hero .carousel-indicators li.active {
+    opacity: 1;
+    background: #0da6a6;
+}
+
+/* responsive */
+@media (min-width: 993px) {
+
+	#rubeus #box-login{
+		top: 55%;
+	}
+	
+	#rubeus #box-inscreva-se{
+		top: 55%;
+	}
+}
+
+@media (max-width: 992px) {
+    #hero {
+      height: 100vh;
+    }
+    #hero .carousel-container {
+      top: 8px;
+    }
+
+	#rubeus #box-login{
+		top: 45%;
+	}
+	
+	#rubeus #box-inscreva-se{
+		top: 45%;
+	}	
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+      font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+      width: 5%;
+    }
+}
+
+@media (max-height: 500px) {
+    #hero {
+      height: 120vh;
+    }
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* home.php */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* codigo do projeto(parte01) */
+/* element, class */
+#painel .box-content-home{          /* box-content-home*/
+	background: white;
+	padding: 30px;
+	margin-bottom: 25px;
+}
+
+#painel .box-content-home h2{
+	font-weight: 300;
+	font-size: 23px;
+}
+
+
+/* configuracao das informacoes centrais da tabela */
+.table-central{
+	margin:20px auto;
+	font-weight: 300;
+	/*background-color: #F4B03E;*/
+	padding: 0 35px 0 35px;
+}
+
+.table-central .row:nth-of-type(1){
+	font-weight: normal;
+	background: #00bfa5;
+	padding: 10px;
+	color: white;
+}
+
+.table-central .row{
+	color: #777;
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+
+.col{
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main.php */ 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* codigo do projeto(parte01) */
+/* element, class */
+#painel .menu{                     /* configuracao menu vertical */
+	overflow-x:hidden;
+	overflow-y: auto;
+	height: 100%;
+	padding:10px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #299797;
+	float: left;
+	width: 350px;
+
+    overflow: hidden;
+    background: url(../img/painel-faculdade.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#painel .menu-wraper{ 
+    width:350px;
+}
+
+/* box-usuario */
+#painel .box-usuario{             
+	padding: 8px;
+	text-align: center;
+}
+
+/* configuracao do logo da faculdade */
+#painel .imagem-logo{
+	display: inline-block;
+	width: 270px;
+	height: 80px;
+	position: relative;
+}
+
+#painel .imagem-logo img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;	
+}
+
+#painel .imagem-logo img:focus {
+	outline: none;
+}
+
+/* configuracao do nome do usuario */
+#painel .nome-usuario{
+	text-align: center;
+	margin-top: 40px;
+}
+
+#painel .nome-usuario p {
+	color: #2a2e2e;
+	font-size: 25px;
+	font-weight: bold;
+    line-height: 5px;
+}
+
+/* configuracao do nome do processo seletico */
+#painel .nome-processo-seletivo1{
+	display: flex;
+	margin-top: 60px;
+	margin-left: 58px;
+}
+
+#painel .nome-processo-seletivo1 p {	
+	color: #2a2e2e;
+	font-size: 18px;
+	font-weight: bold;
+    line-height: 5px;	
+}
+
+#painel .nome-processo-seletivo2{
+	display: flex;
+	margin-top: 10px;
+	margin-left: 58px;
+}
+
+#painel .nome-processo-seletivo2 p {
+	color: #2a2e2e;
+	font-size: 25px;
+	font-weight: bold;
+    line-height: 5px;
+}
+
+/* configuracao da etapas do processo seletico */
+#painel #etapa-processo-seletivo{
+	position: relative;
+	display: flex;
+	margin-top: 60px;
+	margin-left: 58px;
+	width: 100%;
+	/*background-color: #e0b24e;*/
+}
+
+#painel .resume-title {
+	font-size: 26px;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #222222;
+}
+
+#painel .resume-item {
+	padding: 0 0 20px 20px;
+	margin-top: -2px;
+	border-left: 2px solid #2a2e2e;
+	position: relative;
+	width: 150%;
+	/*background-color: #F75353;*/
+}
+
+/* 1 */
+#painel #passo-etapa-logo1 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: block;	
+}
+
+#painel #passo-etapa-logo1 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo1 {
+	color: white;
+}
+
+#painel #passo-etapa-logo2 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: none;	
+}
+
+#painel #passo-etapa-logo2 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo2 {
+	color: #2a2e2e;
+}
+
+#painel #passo-etapa-logo3 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: none;	
+}
+
+#painel #passo-etapa-logo3 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo3 {
+	color: #2a2e2e;
+}
+
+/* 2 */
+#painel #passo-etapa-logo4 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: none;	
+}
+
+#painel #passo-etapa-logo4 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo4 {
+	color: #2a2e2e;
+}
+
+#painel #passo-etapa-logo5 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: block;
+}
+
+#painel #passo-etapa-logo5 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo5 {
+	color: #2a2e2e;
+}
+
+#painel #passo-etapa-logo6 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: none;	
+}
+
+#painel #passo-etapa-logo6 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo6 {
+	color: #2a2e2e;
+}
+
+/* 3 */
+#painel #passo-etapa-logo7 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: none;	
+}
+
+#painel #passo-etapa-logo7 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo7 {
+	color: #2a2e2e;
+}
+
+#painel #passo-etapa-logo8 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: block;	
+}
+
+#painel #passo-etapa-logo8 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo8 {
+	color: #2a2e2e;
+}
+
+#painel #passo-etapa-logo9 {
+	position: absolute;
+	display: flex;
+	margin-left: -43px;
+	top: 2px;	
+	display: none;	
+}
+
+#painel #passo-etapa-logo9 i {
+	font-weight: 300;
+	font-size: 43px;
+}
+
+#painel #cor-etapa-logo9 {
+	color: #2a2e2e;
+}
+
+/* titulo etapa */
+#painel #passo-etapa-titulo1 {
+	position: absolute;
+	display: flex;
+	margin-left: 50px;
+	top: 10px;	
+	/* caracteristica */
+	color: #ffffff;
+	line-height: 18px;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-weight: bold;	
+}
+
+#painel #passo-etapa-titulo2 {
+	position: absolute;
+	display: flex;
+	margin-left: 50px;
+	top: 10px;	
+	/* caracteristica */
+	color: #2a2e2e;
+	line-height: 18px;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-weight: bold;		
+}
+
+#painel #passo-etapa-titulo3 {
+	position: absolute;
+	display: flex;
+	margin-left: 50px;
+	top: 10px;	
+	/* caracteristica */
+	color: #2a2e2e;
+	line-height: 18px;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-weight: bold;		
+}
+
+/* mensagem etapa */
+#painel #passo-etapa-mensagem1 {
+	position: absolute;
+	display: flex;
+	margin-left: 50px;
+	top: 40px;	
+	/* caracteristica */
+	color: #ffffff;
+	line-height: 18px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-weight: bold;	
+}
+
+#painel #passo-etapa-mensagem2 {
+	position: absolute;
+	display: flex;
+	margin-left: 50px;
+	top: 40px;	
+	/* caracteristica */
+	color: #2a2e2e;
+	line-height: 18px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-weight: bold;	
+}
+
+#painel #passo-etapa-mensagem3 {
+	position: absolute;
+	display: flex;
+	margin-left: 50px;
+	top: 40px;	
+	/* caracteristica */
+	color: #2a2e2e;
+	line-height: 16px;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-weight: bold;	
+}
+
+#painel .resume-item:last-child {
+	padding-bottom: 0;
+}
+
+#painel .resume-item::before {
+	content: "";
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border-radius: 50px;
+	left: -30px;
+	top: 0;
+	/*background: #fff;*/
+	background: #299797;
+	border: 2px solid white;
+}
+
+#painel .resume-item:nth-of-type(2)::before {
+	content: "";
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border-radius: 50px;
+	left: -30px;
+	top: 0;
+	/*background: #fff;*/
+	background: #299797;
+	border: 2px solid #2a2e2e;
+}
+
+#painel .resume-item:nth-of-type(3)::before {
+	content: "";
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border-radius: 50px;
+	left: -30px;
+	top: 0;
+	/*background: #fff;*/
+	background: #299797;
+	border: 2px solid #2a2e2e;
+}
+
+/* configuracao menu horizontal */
+#painel header{
+	position: relative;
+	left: 350px;
+	padding: 10px 0;
+	background: #3cd8d8;
+	width: calc(100% - 350px);
+}
+
+#painel .center{ 
+    padding:0 2%;
+    margin:0 auto;	
+}
+
+#painel .menu-btn{
+	float: left;
+	cursor: pointer;
+	font-size: 23px;
+	color: white;
+}
+
+#painel .loggout{
+	float: right;
+}
+
+#painel .loggout a{
+	padding: 0 20px;
+	position: relative;
+	top: 4px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+#painel .loggout a > span{
+	font-size: 16px;
+	text-decoration: none;
+}
+
+/* configuracao geral do conteudo do nosso painel */
+#painel .w100{
+	width: 100%;
+}
+
+#painel .w50{
+	width: 49%;
+}
+
+#painel .left{
+	float: left;
+}
+
+#painel .right{
+	float: right;
+}
+
+#painel .content{ 
+	width: calc(100% - 350px);
+	position: relative;
+	left: 350px;
+    padding: 2%;  
+    
+    min-height: 100vh;
+	overflow: hidden;
+    background: url(../img/devio-restaurante.jpg) center center no-repeat;
+    background-size: cover; 
+}
+
+/* responsive */
+@media screen and (max-width: 1400px){
+	
+	#painel .w50{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1024px){
+
+	#painel .content .box-content-home{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 850px){
+	
+	#painel .box-content-home{
+		padding: 8px;
+		margin-bottom: 5px;
+	}
+
+	/*
+	#painel .content .box-content-home h2{
+		font-size: 20px;
+	}
+
+	#painel .content .box-content-home p {
+		padding: 10px 0;
+		font-size: 18px;
+	}
+
+	#painel .content .descricao-painel h2{
+		font-size: 22px;
+	}
+	*/
+
+	.table-central{
+		margin:15px auto;
+		font-weight: 300;
+		padding: 0 25px 0 25px;
+	}
+
+	#painel .content .col{
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 750px){
+
+	#painel .box-content-home{
+		padding: 5px;
+		margin-bottom: 3px;
+	}
+
+	#painel .content .descricao-painel h2{
+		font-size: 22px;
+	}
+
+	.table-central{
+		margin:10px auto;
+		font-weight: 300;
+		/*background-color: #F4B03E;*/
+		padding: 0 15px 0 15px;
+	}
+
+	#painel .content .col{
+		font-size: 14px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* home.php */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* codigo do projeto(parte01) */
+/* element, class */
+#painel .box-content-home{          /* box-content-home*/
+	background: white;
+	padding: 30px;
+	margin-bottom: 25px;
+}
+
+#painel .box-content-home h2{
+	font-weight: 300;
+	font-size: 23px;
+}
+
+
+#painel .box-content-processo-seletivo{
+	background: rgb(255, 255, 255);
+	padding: 30px;
+	margin-bottom: 5px;
+}
+
+#painel .box-content-processo-seletivo form{
+	margin:30px 0;
+}
+
+#painel .box-content-processo-seletivo form label{
+	font-size: 17px;
+	font-weight: 300;
+	color: black;
+	display: block;
+}
+
+#painel .box-content-processo-seletivo .form-group{
+	margin:15px 0;
+}
+
+#painel .box-content-processo-seletivo form input[type=text]
+{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+
+#painel .box-content-processo-seletivo form select{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+
+#painel .box-content-processo-seletivo form input[type=file]{
+	margin-top:8px;
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+#painel .box-content-processo-seletivo form input[type=submit] {
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    border: 0;
+    width: 250px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px; 
+	/* */ 
+    background: #3cd8d8;
+	cursor: pointer;
+	pointer-events: auto;
+	/*       
+	background: #6e7575;
+	pointer-events: none; 
+	cursor: default; 	
+	 */
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);    
+}  
+  
+#painel .box-content-processo-seletivo form input[type=submit]:hover {
+    background: #299797;
+}
+  
+#painel .box-content-processo-seletivo form input[type=submit]:focus {
+    outline: none;
+}
+
+#painel .box-content-processo-seletivo .centraliza-genero label{
+	position: relative;
+	padding: 10px 0;
+	left: 35%;
+}
+
+#painel .box-content-processo-seletivo .centraliza-social label{
+	position: relative;
+	padding: 10px 0;
+	left: 0%;
+}
+
+#painel .box-content-processo-seletivo .centraliza-especial label{
+	position: relative;
+	padding: 10px 0;
+	left: 0%;
+}
+
+/* */
+#painel .pagina1{
+    display: block;
+}
+
+#painel .pagina2{
+    display: none;
+}
+
+#painel .pagina3{
+    display: none;
+}
+
+#painel .box-formulario{
+    position: relative;
+}
+
+/* */
+#painel #paginas-prox-ante{
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    width: 100%;
+    height: 10px;
+	margin-top: -30px;
+}
+
+#painel #paginas-prox-ante a{
+    float: left; 
+    margin-top: 15px;
+    /*cursor: pointer;	*/
+
+	
+}
+
+#painel #paginas-prox-ante a:nth-of-type(2){
+    float: left; 
+	margin-left: 30px;
+    margin-top: 15px;
+    cursor: pointer;	
+}
+
+#painel .campo-id-marcacao {
+    display: none;
+}
+
+#painel #marcador-pagina{
+    display: none;
+}
+
+#painel #seta-direita {
+	display: block;
+    top: 0;
+    right: -1px;
+	left: 30px;
+    bottom: 0;
+    border: 0;
+	text-align: center;
+    width: 105px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    padding: 5px 20px; 
+	/*
+    background: #3cd8d8;
+	cursor: pointer;
+	pointer-events: auto;
+	*/	         
+	background: #6e7575;
+	pointer-events: none; 
+	cursor: default; 	
+	/* */
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);  
+}  
+  
+#painel #seta-direita:hover {
+    background: #299797;
+	color: #fff;
+}
+  
+#painel #seta-direita:focus {
+    outline: none;
+}
+
+#painel #seta-esquerda {
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    border: 0;
+	text-align: center;
+    width: 105px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    padding: 5px 20px; 
+    background: #3cd8d8;
+	cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);  
+	display: none;  
+}  
+  
+#painel #seta-esquerda:hover {
+    background: #299797;
+	color: #fff;
+}
+  
+#painel #seta-esquerda:focus {
+    outline: none;
+}
+
+/* */
+#painel #botao-cadastrar{
+	float: right; 
+	display: none;
+	margin-top: -20px;
+}
+
+#painel #finalizar-seletiva {
+	display: block;
+    top: 0;
+    right: -1px;
+	left: 30px;
+    bottom: 0;
+    border: 0;
+	text-align: center;
+    width: 105px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    padding: 5px 20px; 
+	/*
+    background: #3cd8d8;
+	cursor: pointer;
+	pointer-events: auto;
+	*/	         
+	background: #6e7575;
+	pointer-events: none; 
+	cursor: default; 	
+	/* */
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}  
+  
+#painel #finalizar-seletiva:hover {
+    background: #299797;
+	color: #fff;
+}
+  
+#painel #finalizar-seletiva:focus {
+    outline: none;
+}
+
+/* popapi-finalizar */
+#painel .popapi-cursos{
+    position: relative;
+    padding: 0 0 0 0;    
+    width: 100%;
+}
+
+#painel .popapi-all-container{
+    margin: 0 auto; 
+    width: 100%;   
+}
+
+#painel #popapi-seletivo {
+    padding: 0 0 0 0;    
+    position: fixed;
+
+    visibility: hidden;
+	/*visibility: visible;*/
+
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(44, 44, 61, 0.384);
+    z-index: 999;
+	/* */
+    min-height: 150vh;
+    overflow: hidden;	
+}
+
+#painel .popapi-container{
+    margin: 0 auto; 
+    max-width: 1280px;
+    padding: 0 2% 0 2%;   
+}
+
+#painel .conteudo-popapi-cursos01 {
+    padding: 0 0 0 0; 
+    position: relative;    
+    /*float: none;*/
+    padding: 18px 2% 18px 2%;
+    width: 100%;
+    margin-top: 10%;  
+    /*background-color: rgb(226, 192, 43);*/
+}
+
+#painel .logo33{
+    position: absolute;
+    float: none;
+    margin-top: -30px;
+    margin-left: 90%;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/logo2_t.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;   
+    background-position: center;     
+    z-index: 1;
+	cursor: pointer;
+    /*background-color: rgb(211, 84, 84);*/
+}
+
+#painel .conteudo-popapi-cursos02 {
+    position: relative;    
+    padding: 70px 4% 50px 4%;
+    width: 100%;
+    max-width: 1024px;
+	min-height: 30vh;
+    background-color: #2a2e2e;
+	/* */
+	left: 50%;
+	top: 65%;
+	margin-top: 18%;
+	transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);	
+} 
+
+#painel .conteudo-popapi-cursos02 .popapi-title-seletivo{  
+    padding: 20px 2% 20px 2%;
+    width: 100%;	
+}
+
+#painel .conteudo-popapi-cursos02 p {	
+	padding: 10px 0;
+	font-size: 17px;
+	font-weight: normal;
+    line-height: 25px;	
+	color: #fff;
+}
+
+#painel .conteudo-popapi-cursos02 h2 {	
+	font-size: 20px;
+	font-weight: normal;
+    line-height: 25px;	
+	color: #299797;
+}
+
+#painel .conteudo-popapi-cursos02 h4 {	
+	font-size: 30px;
+	font-weight: normal;
+    line-height: 25px;	
+	color: #fff;
+}
+
+#painel .exibe-opcao-selecionada {
+    display: none;
+	z-index: 1;
+}
+
+#painel .exibe-opcao-selecionada #opcao-selecionada-modalidade {
+	padding: 10px 0;
+	font-size: 17px;
+	font-weight: normal;
+    line-height: 25px;	
+	color: #fff;	
+}
+
+#painel .exibe-opcao-selecionada #opcao-selecionada-curso {
+	padding: 10px 0;
+	font-size: 17px;
+	font-weight: normal;
+    line-height: 25px;	
+	color: #fff;	
+}
+
+#painel .exibe-opcao-selecionada #opcao-selecionada-polo {
+	padding: 10px 0;
+	font-size: 17px;
+	font-weight: normal;
+    line-height: 25px;	
+	color: #fff;	
+}
+
+#painel .acao-confirmar-seletiva{
+	position: relative;	
+	width: 100%;
+	/*background-color: #F75353;*/
+	height: 100px;
+}
+
+#painel #confirmar-seletiva {
+	position: relative;
+	display: flex;
+    /*
+	display: block;
+	right: -1px;
+	left: 30px;
+	*/
+    bottom: 0;
+    border: 0;
+	text-align: center;
+    width: 245px;
+    height: 40px;
+    background: none;
+    font-size: 16px;
+    padding: 8px 20px; 
+	/* */
+    background: #3cd8d8;
+	cursor: pointer;
+	pointer-events: auto;
+	/* */
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+	left: 50%;
+	top: 65%;
+	transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);	
+}  
+
+#painel #painel-central{
+	display: block;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 23%;
+    }
+
+	#painel .conteudo-popapi-cursos02 p {	
+		font-size: 16px;
+	}
+	
+	#painel .conteudo-popapi-cursos02 h2 {	
+		font-size: 18px;
+	}
+	
+	#painel .conteudo-popapi-cursos02 h4 {	
+		font-size: 28px;
+	}	
+
+	#painel .logo33{
+		margin-left: 85%;
+	}	
+}
+
+@media (max-width: 924px) {
+
+	#painel .conteudo-popapi-cursos02 {
+		margin-top: 28%;		
+    }
+
+	#painel .conteudo-popapi-cursos02 p {	
+		font-size: 15px;
+	}
+	
+	#painel .conteudo-popapi-cursos02 h2 {	
+		font-size: 16px;
+	}
+	
+	#painel .conteudo-popapi-cursos02 h4 {	
+		font-size: 26px;
+	}	
+
+	#painel .logo33{
+		margin-left: 80%;
+	}	
+
+}
+
+@media (max-width: 824px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 33%;
+    }
+}
+
+@media (max-width: 724px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 43%;
+    }
+}
+
+@media (max-width: 624px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 48%;
+    }
+}
+
+@media (max-width: 524px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 58%;
+    }
+}
+
+@media (max-width: 470px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 68%;
+    }
+}
+
+@media (max-width: 424px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 78%;
+    }
+}
+
+@media (max-width: 390px) {
+    #painel .conteudo-popapi-cursos02 {
+		margin-top: 83%;
+    }
+}
+
